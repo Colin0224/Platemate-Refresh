@@ -1,4 +1,12 @@
 import streamlit as st
+
+st.set_page_config(
+    page_title="PlateMate",
+    page_icon="🍽️",
+    layout="centered",
+    initial_sidebar_state="collapsed",
+)
+
 from PIL import Image
 
 from backend.classifier import classify_image
@@ -11,13 +19,6 @@ def _init():
 
 
 _init()
-
-st.set_page_config(
-    page_title="PlateMate",
-    page_icon="🍽️",
-    layout="centered",
-    initial_sidebar_state="collapsed",
-)
 
 st.markdown(
     """
